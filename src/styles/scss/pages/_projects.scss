@@ -1,0 +1,25 @@
+@use '../base/' as *;
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  place-items: center;
+  justify-content: center;
+  gap: $space-medium;
+}
+
+.project-list {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+
+.empty-projects {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  font-size: 30px;
+}

@@ -1,0 +1,22 @@
+@use '../../base/' as *;
+
+@mixin input {
+  display: flex;
+  outline: 1px solid $text-color;
+  border-radius: 2px;
+  border: none;
+  background: transparent;
+  padding: 10px;
+  color: $text-color;
+  cursor: text;
+}
+
+.input-primary {
+  @include input;
+
+  &:focus,
+  &:hover {
+    outline: 1px solid $border-danger-color;
+    transition: all 0.2s ease;
+  }
+}

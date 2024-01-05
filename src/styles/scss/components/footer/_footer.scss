@@ -1,0 +1,17 @@
+@use '../../base' as *;
+
+.footer {
+  // background-color: #202020;
+  // color: #be5cff;
+
+  .wrapper {
+    display: flex;
+    min-height: 48px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 $space-medium;
+    border-top: 1px solid #444c56;
+  }
+}

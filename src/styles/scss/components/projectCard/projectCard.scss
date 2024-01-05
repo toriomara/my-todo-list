@@ -1,0 +1,40 @@
+@use '../../base/' as *;
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  height: 200px;
+  width: 150px;
+  background-color: $bgItem-color;
+  border-radius: 2px;
+  font-weight: 400;
+  transition: all 0.15s ease;
+
+  &:hover {
+    transform: scale(1.1);
+    background-color: lighten($bgItem-color, 20%);
+  }
+
+  .text {
+    cursor: pointer;
+  }
+
+  .project-cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .delete-icon {
+    opacity: 0;
+    visibility: hidden;
+    align-self: flex-end;
+    transition: all 0.2s ease;
+  }
+
+  &:hover .delete-icon {
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+  }
+}

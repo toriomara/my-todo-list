@@ -1,0 +1,36 @@
+@use '../../base/' as *;
+
+@mixin btn {
+  display: inline-block;
+  border-radius: 2px;
+  padding: 8px 20px;
+  margin: 3px;
+  transition: all 0.2s ease;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: $font-stack;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(0.97);
+  }
+}
+
+.btn-primary {
+  @include btn;
+  color: $text-color;
+  background-color: $primary-color;
+}
+
+.btn-secondary {
+  @include btn;
+  background-color: $secondary-color;
+}
+
+.btn-transparent {
+  @include btn;
+  background-color: transparent;
+  border: 1px solid $border-color;
+  color: $text-color;
+}

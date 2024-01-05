@@ -1,0 +1,17 @@
+@use '../../base' as *;
+
+.header {
+  // background-color: #202020;
+
+  .wrapper {
+    display: flex;
+    width: 100%;
+    min-height: 48px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 $space-medium;
+    font-weight: 400;
+    border-bottom: 1px solid $border-color;
+  }
+}
